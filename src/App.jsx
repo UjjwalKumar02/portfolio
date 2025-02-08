@@ -1,4 +1,5 @@
 import About from "./components/about/About"
+import Contact from "./components/contact/Contact"
 import Education from "./components/education/Education"
 import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
@@ -20,6 +21,7 @@ function App() {
     <Projects />
     <Skills />
     <Footer />
+    <Contact />
     </div>
   )
 }
