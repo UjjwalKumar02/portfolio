@@ -8,7 +8,7 @@ const Projects = () => {
         Projects
       </p>
 
-      <div className='flex sm:flex-row flex-col flex-wrap justify-between gap-5 mt-4'>
+      <div className='flex sm:flex-row flex-col flex-wrap gap-5 mt-4'>
         <ProjectCard 
         projectName={"Project 1"} 
         desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem at. Delectus, aperiam, vitae facilis placeat voluptates quis "}
