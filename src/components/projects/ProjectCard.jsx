@@ -30,11 +30,11 @@ const ProjectCard = ({ projectName, desc }) => {
         <p>{desc}</p>
       </div>
       <div className='flex flex-wrap gap-2 mt-4'>
-        <span className='px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='px-6 py-2 border border-gray-400 rounded-lg'>lorem loree</span>
-        <span className='px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem loree</span>
+        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
       </div>
     </div>
   )
