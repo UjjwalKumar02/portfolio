@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectCard = ({ projectName, desc }) => {
   return (
-    <div className='bg-white sm:w-[45%] w-[100%] h-fit border border-gray-400 rounded-lg p-6'>
+    <div className='bg-white sm:w-[48%] w-[100%] h-fit border border-gray-400 rounded-lg p-6'>
       <div className='w-full flex justify-between'>
         <p className='font-semibold'>{projectName}</p>
 
