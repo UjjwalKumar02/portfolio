@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <motion.section 
-    className='bg-white sm:w-[60%] w-[85%] sm:p-9 p-5 mx-auto border border-gray-400 text-[1rem]  text-gray-800 rounded-lg'
+    className='bg-white sm:w-[60%] w-[85%] sm:p-9 p-5 mx-auto border border-gray-400 sm:text-[1.25rem] text-[1rem]  text-gray-800 rounded-lg'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -26,7 +26,7 @@ const HeroSection = () => {
         <div className='w-full'>
           <div className='w-full flex sm:flex-row flex-col gap-3 justify-between'>
             <div>
-              <p className='sm:block hidden font-semibold text-[1.25rem]'>
+              <p className='sm:block hidden font-semibold sm:text-[1.5rem] text-[1.25rem]'>
                 Ujjwal Kumar
               </p>
               <p className='sm:hidden block font-semibold text-[1.25rem]'>

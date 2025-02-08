@@ -7,7 +7,7 @@ const Projects = () => {
 
   return (
     <motion.section 
-    className='sm:w-[60%] w-[90%] sm:p-7 px-4 py-6 text-[1rem] text-gray-800 mx-auto'
+    className='sm:w-[60%] w-[90%] sm:p-7 px-4 py-6 sm:text-[1.25rem] text-[1rem] text-gray-800 mx-auto'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -18,22 +18,14 @@ const Projects = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <p className='text-[1.25rem] font-semibold'>
+      <p className='sm:text-[1.5rem] text-[1.25rem] font-semibold'>
         Projects
       </p>
 
       <div className='flex sm:flex-row flex-col flex-wrap gap-5 mt-4'>
         <ProjectCard 
-        projectName={"Project 1"} 
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem at. Delectus, aperiam, vitae facilis placeat voluptates quis "}
-        />
-        <ProjectCard 
-        projectName={"Project 2"} 
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem at. Delectus, aperiam, vitae facilis placeat voluptates quis "}
-        />
-        <ProjectCard 
-        projectName={"Project 3"} 
-        desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem at. Delectus, aperiam, vitae facilis placeat voluptates quis "}
+        projectName={"Project"} 
+        desc={"coming soon..."}
         />
       </div>
     </motion.section>

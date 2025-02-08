@@ -40,11 +40,11 @@ const ProjectCard = ({ projectName, desc }) => {
         <p>{desc}</p>
       </div>
       <div className='flex flex-wrap gap-2 mt-4'>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem loree</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>Wait</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>for</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>it</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>&#x1F60A;
+        </span>
       </div>
     </motion.div>
   )
