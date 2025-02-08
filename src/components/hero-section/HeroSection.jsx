@@ -1,22 +1,20 @@
 import React from 'react';
 import pfp from '/public/pfp.jpg'
 import location from '/public/location.svg'
-
+import mail from '/public/mail.svg'
 
 const HeroSection = () => {
   return (
     <section
-      className='bg-white sm:w-[60%] w-[90%] sm:p-7 p-3 mx-auto border border-black sm:text-sm text-[0.67rem] text-gray-800 rounded-lg'
+      className='bg-white sm:w-[60%] w-[90%] sm:p-7 p-3 mx-auto border border-black text-[1rem]  text-gray-800 rounded-lg'
     >
       <div className='w-full flex gap-4'>
-        <img src={pfp} alt="pfp" className='sm:w-23 sm:h-23 w-14 h-14 rounded-lg' />
+        <img src={pfp} alt="pfp" className='sm:w-29 sm:h-29 w-18 h-18 rounded-lg' />
 
         <div className='w-full'>
           <div className='w-full flex sm:flex-row flex-col gap-3 justify-between'>
             <div>
-              <p
-                className='font-semibold sm:text-md text-[0.74rem]'
-              >
+              <p className='font-semibold text-[1.25rem]'>
                 Ujjwal Kumar
               </p>
               <p>ML Engineer</p>
@@ -40,7 +38,7 @@ const HeroSection = () => {
               Delhi, India
             </span>
             <span className='flex gap-[2px]'>
-              <img src="/u/public/mail.svg" alt="" className='w-4' />
+              <img src={mail} alt="" className='w-4' />
               kumarujjwaldos@gmail.com
             </span>
           </div>
@@ -57,7 +55,7 @@ const HeroSection = () => {
           Delhi, India
         </span>
         <span className='flex gap-[2px]'>
-          <img src="/u/public/mail.svg" alt="" className='w-3' />
+          <img src={mail} alt="" className='w-3' />
           kumarujjwaldos@gmail.com
         </span>
       </div>
