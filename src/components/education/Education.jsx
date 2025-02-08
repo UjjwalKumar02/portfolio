@@ -1,8 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {motion} from 'framer-motion'
 
 const Education = () => {
+  const [hasAnimated, setHasAnimated] = useState(false)
+
   return (
-    <section className='sm:w-[60%] w-90% sm:p-6 px-4 py-6 text-[1rem] text-gray-800 mx-auto'>
+    <motion.section 
+    className='sm:w-[60%] w-[90%] sm:p-7 px-4 py-6 text-[1rem] text-gray-800 mx-auto'
+    initial={{opacity:0, y:50}}
+    whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
+    transition={{duration:0.5, ease:'easeOut'}}
+    viewport={{
+      once:false, 
+      amount:0.5,
+      onEnter: ()=>setHasAnimated(true),
+      onExit: ()=>setHasAnimated(false)
+    }}
+    >
       <p className='text-[1.25rem] font-semibold'>
         Education
       </p>
@@ -13,7 +27,7 @@ const Education = () => {
         </div>
         <p>2022 - ongoing</p>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

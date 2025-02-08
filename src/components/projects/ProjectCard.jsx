@@ -1,8 +1,18 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const ProjectCard = ({ projectName, desc }) => {
   return (
-    <div className='bg-white sm:w-[48%] w-[100%] h-fit border border-gray-400 rounded-lg p-6'>
+    <motion.div 
+    className='bg-white sm:w-[48%] w-[90%] h-fit border border-gray-400 rounded-lg p-6'
+    whileHover={{
+      scale:1.03,
+      boxShadow:"0px 4px 15px rgba(0, 0, 0, 0.15)",
+      y:-5
+    }}
+    initial={{scale:1}}
+    transition={{duration:0.3}}
+    >
       <div className='w-full flex justify-between'>
         <p className='font-semibold'>{projectName}</p>
 
@@ -30,13 +40,13 @@ const ProjectCard = ({ projectName, desc }) => {
         <p>{desc}</p>
       </div>
       <div className='flex flex-wrap gap-2 mt-4'>
-        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem loree</span>
-        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
-        <span className='bg-[#f8f9fa] px-6 py-2 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem loree</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
+        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>lorem</span>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
