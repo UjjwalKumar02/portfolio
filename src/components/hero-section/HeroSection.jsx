@@ -6,7 +6,7 @@ import mail from '/public/mail.svg'
 const HeroSection = () => {
   return (
     <section
-      className='bg-white sm:w-[60%] w-[90%] sm:p-7 p-5 mx-auto border border-gray-500 text-[1rem]  text-gray-800 rounded-lg'
+      className='bg-white sm:w-[60%] w-[90%] sm:p-7 p-5 mx-auto border border-gray-400 text-[1rem]  text-gray-800 rounded-lg'
     >
       <div className='w-full flex gap-6'>
         <img src={pfp} alt="pfp" className='sm:w-29 sm:h-29 w-23 h-23 rounded-lg' />

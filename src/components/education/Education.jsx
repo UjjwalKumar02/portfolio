@@ -2,7 +2,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <section className='sm:w-[60%] w-90% mx-auto sm:p-6 p-2 text-[1rem] text-gray-800'>
+    <section className='sm:w-[60%] w-90% sm:p-6 px-4 py-6 text-[1rem] text-gray-800 mx-auto'>
       <p className='text-[1.25rem] font-semibold'>
         Education
       </p>
