@@ -13,7 +13,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='h-8 text-right p-1'>
+    <div className='h-10 text-right p-1'>
       {time}
     </div>
   )

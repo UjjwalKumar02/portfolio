@@ -12,7 +12,7 @@ const Projects = () => {
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
     viewport={{
-      amount:0.5,
+      amount:0.1,
       once:false,
       onEnter: ()=>setHasAnimated(true),
       onExit: ()=>setHasAnimated(false)

@@ -13,7 +13,7 @@ const Skills = () => {
     transition={{duration:0.5, ease:'easeOut'}}
     viewport={{
       once:false, 
-      amount:0.5,
+      amount:0.1,
       onEnter: ()=>setHasAnimated(true),
       onExit: ()=>setHasAnimated(false)
     }}

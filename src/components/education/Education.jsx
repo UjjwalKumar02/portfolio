@@ -12,7 +12,7 @@ const Education = () => {
     transition={{duration:0.5, ease:'easeOut'}}
     viewport={{
       once:false, 
-      amount:0.5,
+      amount:0.1,
       onEnter: ()=>setHasAnimated(true),
       onExit: ()=>setHasAnimated(false)
     }}
@@ -20,7 +20,7 @@ const Education = () => {
       <p className='text-[1.25rem] font-semibold'>
         Education
       </p>
-      <div className='w-full mt-4 flex justify-between'>
+      <div className='w-full mt-4 flex sm:flex-row flex-col gap-2 justify-between'>
         <div>
           <p className='font-semibold'>Bachelor of Technology</p>
           <p>Maharaja Agrasen Institute of Technology, Delhi</p>
