@@ -13,7 +13,7 @@ function App() {
   
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#050505]">
     <Header />
     <HeroSection />
     <About />

@@ -1,10 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-const SkillBox = ({skill}) => {
+const SkillBoxOr = ({skill}) => {
   return (
     <motion.div 
-    className='bg-[#e5e5e5] text-gray-800 px-5 py-1 border border-gray-400 rounded-lg'
+    className='bg-[#e76231] text-gray-300 px-5 py-1 border border-gray-800 rounded-lg'
     whileHover={{
       y: -5,
       boxShadow:"0px 4px 15px rgba(0, 0, 0, 0.15)",
@@ -17,4 +17,4 @@ const SkillBox = ({skill}) => {
   )
 }
 
-export default SkillBox
+export default SkillBoxOr
