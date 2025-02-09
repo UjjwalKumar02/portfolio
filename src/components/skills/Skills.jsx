@@ -21,7 +21,7 @@ const Skills = () => {
       <p className='sm:text-[1.5rem] text-[1.25rem] font-semibold'>
         Technical Skills
       </p>
-      <div className='flex flex-wrap gap-2 mt-4'>
+      <div className='flex flex-wrap gap-1 mt-4'>
         <SkillBox skill={"Python"}/>
         <SkillBox skill={"Supervised Learning"}/>
         <SkillBox skill={"Unsupervised Learning"}/>

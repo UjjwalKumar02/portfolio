@@ -7,13 +7,13 @@ import HeroSection from "./components/hero-section/HeroSection"
 import Projects from "./components/projects/Projects"
 import Skills from "./components/skills/Skills"
 
-
+// #f8f9fa
 
 function App() {
   
 
   return (
-    <div className="bg-[#f8f9fa]">
+    <div className="bg-white">
     <Header />
     <HeroSection />
     <About />

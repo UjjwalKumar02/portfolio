@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const ProjectCard = ({ projectName, desc }) => {
   return (
     <motion.div 
-    className='bg-white sm:w-[48%] w-[97%] h-fit border border-gray-400 rounded-lg p-6'
+    className='bg-[#050505] text-white sm:w-[48%] w-[97%] h-fit border border-gray-400 rounded-lg p-6'
     whileHover={{
       scale:1.03,
       boxShadow:"0px 4px 15px rgba(0, 0, 0, 0.15)",
@@ -40,10 +40,10 @@ const ProjectCard = ({ projectName, desc }) => {
         <p>{desc}</p>
       </div>
       <div className='flex flex-wrap gap-2 mt-4'>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>Wait</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>for</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>it</span>
-        <span className='bg-[#f8f9fa] px-5 py-1 border border-gray-400 rounded-lg'>&#x1F60A;
+        <span className='bg-white text-gray-600 px-5 py-1 border border-gray-400 rounded-lg'>Wait</span>
+        <span className='bg-white text-gray-600 px-5 py-1 border border-gray-400 rounded-lg'>for</span>
+        <span className='bg-white text-gray-600 px-5 py-1 border border-gray-400 rounded-lg'>it</span>
+        <span className='bg-white text-gray-600 px-5 py-1 border border-gray-400 rounded-lg'>&#x1F60A;
         </span>
       </div>
     </motion.div>

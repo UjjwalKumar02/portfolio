@@ -4,12 +4,13 @@ import location from '/public/location.svg'
 import mail from '/public/mail.svg'
 import {motion} from 'framer-motion'
 
+// text-gray-800
 const HeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false)
 
   return (
     <motion.section 
-    className='bg-white sm:w-[60%] w-[85%] sm:p-9 p-5 mx-auto border border-gray-400 sm:text-[1.25rem] text-[1rem]  text-gray-800 rounded-lg'
+    className='bg-[#050505] sm:w-[60%] w-[85%] sm:p-9 p-5 mx-auto border border-gray-400 sm:text-[1.25rem] text-[1rem] text-white  rounded-lg'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
