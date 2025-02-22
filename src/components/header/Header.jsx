@@ -13,7 +13,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='h-10 text-right p-1 text-[#e76231]'>
+    <div className='text-right px-1 py-3 text-[#e76231]'>
       {time}
     </div>
   )

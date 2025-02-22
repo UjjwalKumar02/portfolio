@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 const ProjectCard = ({ projectName, desc }) => {
   return (
     <motion.div 
-    className='bg-[#171717] text-gray-300 sm:w-[48%] w-[97%] h-fit border border-gray-900 rounded-lg p-6 shadow-lg'
+    className='bg-[#171717] text-gray-300 md:w-[48%] w-[97%] h-fit border border-gray-800 rounded-lg p-6 shadow-lg'
     whileHover={{
       scale:1.03,
       boxShadow:"0px 4px 15px rgba(0, 0, 0, 0.15)",
