@@ -2,10 +2,17 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='md:w-[60%] w-[90%] md:p-4 px-4 py-4 text-[1rem] text-gray-300  border-t border-gray-400 mx-auto md:mt-10 mt-8'>
-      <p 
-      className='text-center font-semibold'
-      >Copyright 2025 | Ujjwal Kumar</p>
+    <section id='contact' className='md:w-[60%] w-[90%] md:py-10 py-8 px-4 text-[1.1rem] text-gray-500 mx-auto'>
+      <div className='flex items-center justify-center font-medium gap-4'>
+        <p className='pr-4 border-r-2 border-gray-500'>
+          Ujjwal Kumar
+        </p>
+        <div className='flex gap-2'>
+          <a href="mailto:ujjwal.kumar.id@gmail.com">Email</a>
+          <a href="https://github.com/ujjwalkumar02">GitHub</a>
+          <a href="https://www.linkedin.com/in/ujjwal-kumar-958ba6272">LinkedIn</a>
+        </div>
+      </div>
     </section>
   )
 }
