@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import pfp from '/public/pfp.jpeg'
+import pfp from '/public/pfpf.jpg'
 import location from '/public/location.svg'
 import mail from '/public/mail.svg'
 import {motion} from 'framer-motion'
@@ -24,7 +24,7 @@ const HeroSection = () => {
     }}
     >
       <div className='w-full flex md:gap-9 gap-6 md:items-start items-center'>
-        <img src={pfp} alt="pfp" className='md:w-33 md:h-34 w-26 h-30 rounded-lg border border-gray-200' />
+        <img src={pfp} alt="pfp" className='md:w-33 md:h-34 w-26 h-30 rounded-lg border border-gray-200 object-cover' />
 
         <div className='w-full'>
           <div className='w-full flex md:flex-row flex-col gap-3 justify-between'>
