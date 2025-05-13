@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <motion.section 
-    className='bg-white md:w-[60%] w-[85%] md:px-9 md:py-11 px-5 py-7 mx-auto md:text-[1.15rem] text-[1rem] text-gray-800 rounded-lg border border-gray-200 shadow-lg'
+    className='bg-white md:w-[60%] w-[85%] md:px-9 md:py-11 px-5 py-7 mx-auto md:text-[1.15rem] text-[1rem] text-gray-800 rounded-xl border border-gray-200 shadow-lg'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}

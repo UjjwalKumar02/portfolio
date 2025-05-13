@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 const ProjectCard = ({ projectName, desc, pfp, github, live }) => {
   return (
     <div 
-    className='bg-white text-gray-800 w-[97%] h-fit border border-gray-200 rounded-lg p-6 md:py-11 md:px-9 shadow-lg  text-[0.95rem] md:text-[1.1rem]'
+    className='bg-white text-gray-800 w-[97%] h-fit border border-gray-200 rounded-xl p-6 md:py-11 md:px-9 shadow-lg  text-[0.95rem] md:text-[1.1rem]'
     >
       <div className='flex md:flex-row flex-col items-center md:gap-16 gap-5'>
 

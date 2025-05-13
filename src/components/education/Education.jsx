@@ -30,9 +30,9 @@ const Education = () => {
         <img src={mait} alt="" className='mt-2 h-15'/>
         <div className='md:space-y-1 space-y-2'>
           <p className='font-semibold md:text-[1.35rem] text-[1.1rem]'>
-          Maharaja Agrasen Institue of Technology
+          Maharaja Agrasen Institute of Technology
           </p>
-          <p>Bachelor of Technology in Electronic and Communications</p>
+          <p>Bachelor of Technology in Electronics and Communication</p>
           <p>2022 - Present</p>
           <p className='mt-8 italic text-gray-600'>Minor in Artificial Intelligence and Machine Learning</p>
           <p className='italic text-gray-600'>CGPA: 7.9</p>
