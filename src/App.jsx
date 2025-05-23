@@ -12,7 +12,7 @@ function App() {
   
 
   return (
-    <div className="bg-[#f5f5f7]">
+    <div style={{ fontFamily: 'Poppins, sans-serif' }} className="">
     <Nav />
     <HeroSection />
     <About />

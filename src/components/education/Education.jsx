@@ -20,7 +20,7 @@ const Education = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-[#e76231]'>
+      <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-black'>
         Education
       </p>
 
