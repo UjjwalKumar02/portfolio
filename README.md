@@ -1,6 +1,6 @@
 # Portfolio
 
-Link: https://UjjwalKumar02.github.io/portfolio/
+Link: https://UjjwalKumar02.github.io/portfolio
 
 <br>
 
