@@ -35,7 +35,7 @@ const Education = () => {
           <p>Bachelor of Technology in Electronics and Communication</p>
           <p>2022 - Present</p>
           <p className='mt-8 italic text-gray-600'>Minor in Artificial Intelligence and Machine Learning</p>
-          <p className='italic text-gray-600'>CGPA: 7.9</p>
+          <p className='italic text-gray-600'>CGPA: 7.8</p>
         </div>
       </div>
     </motion.section>

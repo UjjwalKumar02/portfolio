@@ -10,7 +10,7 @@ const ProjectCard = ({ projectName, desc, pfp, github, live }) => {
     >
       <div className='flex md:flex-row flex-col items-center md:gap-16 gap-5'>
 
-        <img src={pfp} alt="project-image" className='md:w-46 md:h-46 w-full h-38 object-cover rounded-md border border-gray-200'/>
+        {/* <img src={pfp} alt="project-image" className='md:w-46 md:h-46 w-full h-38 object-cover rounded-md border border-gray-200'/> */}
 
         <div className=''>
           <p className='font-semibold md:text-[1.35rem] text-[1.2rem] '>{projectName}</p>

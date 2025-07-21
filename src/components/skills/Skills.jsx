@@ -25,19 +25,19 @@ const Skills = () => {
       <div className='flex flex-col gap-4 mt-6'>
         <div className='flex md:flex-row flex-col gap-2 md:items-center'>
           <p className='font-semibold md:text-[1.35rem] text-[1.1rem]'>Languages:</p>
-          <p>Python, C++, Javascript, SQL</p>
+          <p>C++, Python, Javascript</p>
         </div>
         <div className='flex md:flex-row flex-col gap-2 md:items-center'>
           <p className='font-semibold md:text-[1.35rem] text-[1.1rem]'>Frontend:</p>
-          <p>ReactJS, Tailwind CSS, HTML, CSS</p>
+          <p>Next.js, React.js, Tailwind CSS, HTML, CSS</p>
         </div>
         <div className='flex md:flex-row flex-col gap-2 md:items-center'>
           <p className='font-semibold md:text-[1.35rem] text-[1.1rem]'>Machine learning:</p>
-          <p>Supervised & Unsupervised Algorithms, NLP, Neural Networks</p>
+          <p>Supervised & Unsupervised Algorithms, NLP</p>
         </div>
         <div className='flex md:flex-row flex-col gap-2 md:items-center'>
           <p className='font-semibold md:text-[1.35rem] text-[1.1rem]'>Others:</p>
-          <p>FastAPI, Flask, Streamlit, Git</p>
+          <p>SQL, Flask, Streamlit, Git</p>
         </div>
       </div>
     </motion.section>

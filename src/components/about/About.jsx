@@ -24,7 +24,7 @@ const About = () => {
           About
         </p>
         <p className='mt-4'>
-        Hi, I'm an undergraduate engineer, and I am learning and developing ML models, and curious about how different ML techniques can solve real-world problems.
+          Hi, I'm an undergraduate student passionate about learning technologies like web development and machine learning to solve real-world problems.
         </p>
       </div>
     </motion.section>

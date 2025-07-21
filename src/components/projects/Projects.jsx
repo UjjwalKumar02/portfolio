@@ -27,16 +27,16 @@ const Projects = () => {
 
       <div className='flex md:flex-row flex-col flex-wrap gap-10 mt-6'>
         <ProjectCard 
-          projectName={"Spam email classifier"} 
-          desc={"Built a spam email classifier using NLP techniques, optimized a Multinomial Naive Bayes model, and deployed it using Flask."}
+          projectName={"Authify"} 
+          desc={"A web app built with Next.js that implements JWT authentication for secure user login."}
           pfp={pf1}
-          github={"https://github.com/UjjwalKumar02/Spam-Email-Classifier"}
+          github={"https://github.com/UjjwalKumar02/Authify"}
         />
         <ProjectCard 
-          projectName={"Pokémon Image Predictor"} 
-          desc={"Built a CNN-based image classifier to identify Pokémons from user-uploaded images. Developed a full-stack web app with ReactJS and FastAPI for real-time predictions."}
+          projectName={"MailSense"} 
+          desc={"A web app that uses NLP-based machine learning model to classify messages as spam or ham in real time."}
           pfp={pf2}
-          github={"https://github.com/UjjwalKumar02/CNN-Based-Pokemon-Image-Predictor"}
+          github={"https://github.com/UjjwalKumar02/MailSense"}
         />
       </div>
     </motion.section>
