@@ -8,7 +8,7 @@ const About = () => {
   return (
     <motion.section
     id='about' 
-    className='md:w-[60%] w-[90%] md:text-[1.2rem] text-[1rem] text-gray-800 mx-auto md:py-20 py-16 px-4 border-b border-gray-200'
+    className='w-full md:text-[1.2rem] text-[1rem] text-gray-800 md:py-20 py-16 px-4 bg-[#f5f5f5] dark:bg-[#171717] dark:text-[#a3a3a3]'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -19,8 +19,8 @@ const About = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <div>
-        <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-black'>
+      <div className='md:w-[60%] w-[90%] mx-auto dark:border-gray-700 '>
+        <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-[#fe6a34]'>
           About
         </p>
         <p className='mt-4'>
