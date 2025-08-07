@@ -71,7 +71,7 @@ const Nav = ({home, about, project, contact}) => {
     //   )}
     // </div>
     <div className="w-full fixed t-0 border-b border-gray-200">
-      <div className="md:w-[50%] mx-auto flex justify-between px-7 py-4 border-x border-gray-200 text-[0.9rem] bg-white">
+      <div className="md:w-[50%] mx-auto flex justify-between px-7 py-4 border-x border-gray-200 md:text-[0.9rem] text-[0.8rem] bg-white">
         <div>
           <a 
           onClick={home} 
@@ -81,7 +81,7 @@ const Nav = ({home, about, project, contact}) => {
         </a>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex md:gap-5 gap-3 ">
           <a 
           onClick={about} 
           className="cursor-pointer"

@@ -29,9 +29,9 @@ const HeroSection = () => {
       {/* md:w-[60%] w-[87%] flex md:flex-row flex-col items-center justify-around md:gap-22 gap-9 mx-auto py-16 px-24 */}
 
       <div 
-      className='md:w-[50%] mx-auto flex flex-col gap-16 border-x md:px-10 px-8 border-gray-200 py-25 h-screen'
+      className='md:w-[50%] md:text-[1.15rem] text-[0.9rem] mx-auto flex flex-col gap-16 border-x md:px-10 px-7 border-gray-200 py-25 h-screen'
       >
-        <img src={pfp} alt="pfp" className='md:w-full md:h-52 w-full h-40 rounded-4xl object-cover border border-[#f5f5f5] dark:border-gray-700' />
+        <img src={pfp} alt="pfp" className='md:w-full md:h-52 w-full h-34 md:rounded-4xl rounded-2xl object-cover border border-[#f5f5f5] dark:border-gray-700' />
 
         <div className='text-left px-2'>
           <div className='w-full flex md:flex-row flex-col gap-3 justify-between'>
@@ -59,8 +59,8 @@ const HeroSection = () => {
           </div>
 
           {/* <div className='mt-4'> */}
-            <span className='flex gap-[1px] items-center justify-start  mt-4'>
-              <svg xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 0 24 24" width="19" fill="oklch(0.872 0.01 258.338)">
+            <span className='flex items-center justify-start mt-4'>
+              <svg xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 0 26 24" width="19" fill="oklch(0.872 0.01 258.338)">
                 <path d="M12 2C8.13 2 5 5.13 5 8.5c0 4.67 7 12.5 7 12.5s7-7.83 7-12.5c0-3.37-3.13-6.5-7-6.5zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 7.5 12 7.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
               </svg>
               Delhi, India
@@ -84,7 +84,7 @@ const HeroSection = () => {
             </p>
         </div>
         
-        <div className='flex items-center md:gap-7 gap-3 px-3 '>
+        <div className='flex items-center md:justify-start justify-between md:gap-7 gap-2 px-3 md:text-md text-sm'>
 
             <a
               href='https://www.linkedin.com/in/ujjwal-kumar-958ba6272' 
@@ -111,9 +111,9 @@ const HeroSection = () => {
 
             <a 
               href='mailto:ujjwal.kumar.id@gmail.com'
-              className='flex items-center gap-1 cursor-pointer'
+              className='flex items-end gap-1 cursor-pointer'
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-8 h-7.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-8 h-7.5">
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
               </svg>
