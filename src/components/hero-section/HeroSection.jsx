@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import pfp from '/public/pfpf.jpg'
+import pfp from '/public/stars2.avif'
 import location from '/public/location.svg'
 import mail from '/public/mail.svg'
 import {motion} from 'framer-motion'
@@ -7,6 +7,7 @@ import {motion} from 'framer-motion'
 
 // bg-white md:w-[60%] w-[87%] md:px-12 md:py-11 px-6 py-8 mx-auto md:text-[1.15rem] text-[1rem] text-gray-800 rounded-3xl border border-gray-300 shadow-xs
 
+// md:text-[1.15rem] text-[1rem]  flex items-center justify-center bg-white dark:bg-[#171717] dark:text-gray-300 mb-8
 
 const HeroSection = () => {
   const [hasAnimated, setHasAnimated] = useState(false)
@@ -14,7 +15,7 @@ const HeroSection = () => {
 
   return (
     <motion.section 
-    className='md:text-[1.15rem] text-[1rem] h-screen flex items-center justify-center bg-[#f5f5f5] dark:bg-[#171717] dark:text-[#a3a3a3]'
+    className='w-full'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -25,18 +26,20 @@ const HeroSection = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <div 
-      className='md:w-[60%] w-[87%] flex md:flex-row flex-col items-center justify-center md:gap-22 gap-9 mx-auto'
-      >
-        <img src={pfp} alt="pfp" className='md:w-50 md:h-50 h-34 w-34 rounded-full object-cover border border-[#f5f5f5] dark:border-gray-700' />
+      {/* md:w-[60%] w-[87%] flex md:flex-row flex-col items-center justify-around md:gap-22 gap-9 mx-auto py-16 px-24 */}
 
-        <div className='md:text-left text-center'>
+      <div 
+      className='md:w-[50%] mx-auto flex flex-col gap-16 border-x md:px-10 px-8 border-gray-200 py-25 h-screen'
+      >
+        <img src={pfp} alt="pfp" className='md:w-full md:h-52 w-full h-40 rounded-4xl object-cover border border-[#f5f5f5] dark:border-gray-700' />
+
+        <div className='text-left px-2'>
           <div className='w-full flex md:flex-row flex-col gap-3 justify-between'>
             <div>
-              <p className='font-semibold md:text-[1.6rem] text-[1.3rem] dark:text-[#f5f5f5]'>
+              <p className='md:text-[1.6rem] text-[1.3rem] dark:text-[#f5f5f5]'>
                 Ujjwal Kumar
               </p>
-              <p className='text-[#fe6a34]'>Aspiring ML Engineer</p>
+              <p className='text-[#004eff]'>Aspiring ML Engineer</p>
             </div>
 
             {/* <div className='md:flex hidden gap-[0.6rem] h-fit'>
@@ -55,19 +58,20 @@ const HeroSection = () => {
             </div> */}
           </div>
 
-          <div className='mt-4'>
-            <span className='flex gap-[1px] items-center md:justify-start justify-center'>
+          {/* <div className='mt-4'> */}
+            <span className='flex gap-[1px] items-center justify-start  mt-4'>
               <svg xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 0 24 24" width="19" fill="oklch(0.872 0.01 258.338)">
                 <path d="M12 2C8.13 2 5 5.13 5 8.5c0 4.67 7 12.5 7 12.5s7-7.83 7-12.5c0-3.37-3.13-6.5-7-6.5zm0 10.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 7.5 12 7.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
               </svg>
               Delhi, India
             </span>
+            
 
             {/* <span className='flex gap-[3px] items-center md:justify-start justify-center'>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-4 w-4"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
               ujjwal.kumar.id@gmail.com
             </span> */}
-          </div>
+          {/* </div> */}
 
           {/* <div className='mt-4 md:block hidden'>
             <p>
@@ -75,22 +79,62 @@ const HeroSection = () => {
             </p>
           </div> */}
 
-          {/* <div className='flex justify-center items-center mt-4 gap-2'>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" height="27" width="27" viewBox="0 0 27 27" focusable="false" class="h-[34px] w-[34px] babybear:h-[26px] babybear:w-[26px] lazy-loaded" aria-busy="false">
+          <p className='mt-8'>
+              Trying to read and stay awake.
+            </p>
+        </div>
+        
+        <div className='flex items-center md:gap-7 gap-3 px-3 '>
+
+            <a
+              href='https://www.linkedin.com/in/ujjwal-kumar-958ba6272' 
+              className='flex items-end gap-1 cursor-pointer'>
+              <svg xmlns="http://www.w3.org/2000/svg" height="26" width="27" viewBox="0 0 27 27" focusable="false" class="babybear:h-[26px] babybear:w-[26px] lazy-loaded" aria-busy="false">
               <g fill="currentColor">
                 <path d="M1.91 0h22.363a1.91 1.91 0 011.909 1.91v22.363a1.91 1.91 0 01-1.91 1.909H1.91A1.91 1.91 0 010 24.272V1.91A1.91 1.91 0 011.91 0zm1.908 22.364h3.818V9.818H3.818zM8.182 5.727a2.455 2.455 0 10-4.91 0 2.455 2.455 0 004.91 0zm2.182 4.091v12.546h3.818v-6.077c0-2.037.75-3.332 2.553-3.332 1.3 0 1.81 1.201 1.81 3.332v6.077h3.819v-6.93c0-3.74-.895-5.78-4.667-5.78-1.967 0-3.277.921-3.788 1.946V9.818z" fill="currentColor" fill-rule="evenodd"></path>
               </g>
               </svg>
-            </span>
-            <span>
-              <svg height="34" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="34" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+              LinkedIn
+            </a>
+
+            <a 
+              href='https://github.com/ujjwalkumar02'
+              className='flex items-end gap-1 cursor-pointer'
+              >
+              <svg height="27" aria-hidden="true" viewBox="0 0 21 22" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
                 <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
               </svg>
-            </span>
-          </div> */}
-        </div>
+              GitHub
+            </a>
+
+            
+
+            <a 
+              href='mailto:ujjwal.kumar.id@gmail.com'
+              className='flex items-center gap-1 cursor-pointer'
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-8 h-7.5">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              Mail
+            </a>
+
+            {/* <span>
+              
+            </span> */}
+            
+
+            
+            
+            {/* <span> */}
+              {/* <svg height="34" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="34" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+              </svg> */}
+            {/* </span> */}
+          </div>
       </div>
+      
 
 
       {/* <div className='md:hidden flex gap-2 h-fit mt-8'>

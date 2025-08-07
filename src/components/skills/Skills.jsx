@@ -7,7 +7,7 @@ const Skills = () => {
 
   return (
     <motion.section 
-    className='md:py-20 py-16 px-4  md:text-[1.2rem] text-[1rem] text-gray-800 bg-[#f5f5f5] dark:bg-[#171717] dark:text-[#a3a3a3]'
+    className=' text-gray-800 bg-white dark:bg-[#171717] dark:text-[#a3a3a3]'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -18,29 +18,29 @@ const Skills = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <div className='md:w-[60%] w-[90%] mx-auto'>
-        <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-[#fe6a34]'>
+      <div className='md:w-[50%] mx-auto border-x border-t border-gray-300 px-10 py-14'>
+        <p className='md:text-[1.7rem] text-[1.5rem]  text-[#004eff] '>
           Technical Skills
         </p>
         
-        <div className='flex flex-col gap-4 mt-6'>
-          <div className='flex md:flex-row flex-col gap-2 md:items-center'>
+        <div className='flex flex-col gap-4 mt-8 '>
+          <div className='flex gap-2 md:items-center'>
             <p className='font-semibold md:text-[1.35rem] text-[1.1rem] dark:text-[#f5f5f5]'>Languages:</p>
             <p>C++, Python, Javascript</p>
           </div>
-          <div className='flex md:flex-row flex-col gap-2 md:items-center '>
+          <div className='flex  gap-2 md:items-center '>
             <p className='font-semibold md:text-[1.35rem] text-[1.1rem] dark:text-[#f5f5f5]'>Frontend:</p>
             <p>Next.js, React.js, Tailwind CSS, HTML, CSS</p>
           </div>
-          <div className='flex md:flex-row flex-col gap-2 md:items-center'>
+          <div className='flex gap-2 md:items-center'>
             <p className='font-semibold md:text-[1.35rem] text-[1.1rem] dark:text-[#f5f5f5]'>Backend:</p>
             <p>Node.js, Express.js, RESTful APIs</p>
           </div>
-          <div className='flex md:flex-row flex-col gap-2 md:items-center'>
+          <div className='flex gap-2 md:items-center'>
             <p className='font-semibold md:text-[1.35rem] text-[1.1rem] dark:text-[#f5f5f5]'>Machine learning:</p>
             <p>Supervised & Unsupervised Algorithms, NLP</p>
           </div>
-          <div className='flex md:flex-row flex-col gap-2 md:items-center'>
+          <div className='flex gap-2 md:items-center'>
             <p className='font-semibold md:text-[1.35rem] text-[1.1rem] dark:text-[#f5f5f5]'>Others:</p>
             <p>SQL, Flask, Streamlit, Git</p>
           </div>

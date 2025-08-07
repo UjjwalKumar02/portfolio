@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <motion.section
     id='project' 
-    className='w-full px-4 md:py-20 py-16 md:text-[1.2rem] text-[1rem] bg-[#f5f5f5] dark:bg-[#171717] dark:text-[#a3a3a3]'
+    className='w-full md:text-[1.2rem] text-[1rem] bg-white dark:bg-[#171717] dark:text-[#a3a3a3]'
     initial={{opacity:0, y:50}}
     whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
     transition={{duration:0.5, ease:'easeOut'}}
@@ -21,21 +21,21 @@ const Projects = () => {
       onExit: ()=>setHasAnimated(false)
     }}
     >
-      <div className='md:w-[60%] w-[90%] mx-auto'>
-        <p className='md:text-[1.7rem] text-[1.5rem] font-semibold text-[#fe6a34]'>
+      <div className='md:w-[50%]  mx-auto px-10 py-14 border-x border-t border-gray-300 pt-20'>
+        <p className='md:text-[1.7rem] text-[1.5rem]  text-[#004eff] '>
           Projects
         </p>
 
-        <div className='flex md:flex-row flex-col flex-wrap gap-10 mt-6'>
+        <div className='flex flex-wrap gap-4 mt-8 justify-center'>
           <ProjectCard 
             projectName={"Authify"} 
-            desc={"A web app built with Next.js that implements JWT authentication for secure user login."}
+            desc={"A Next.js app that implements JWT authentication for secure user login."}
             pfp={pf1}
             github={"https://github.com/UjjwalKumar02/Authify"}
           />
           <ProjectCard 
             projectName={"MailSense"} 
-            desc={"A web app that uses NLP-based machine learning model to classify messages as spam or ham in real time."}
+            desc={"A NLP-based ML model to classify messages as spam or ham in real time."}
             pfp={pf2}
             github={"https://github.com/UjjwalKumar02/MailSense"}
           />
