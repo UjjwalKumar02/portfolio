@@ -46,14 +46,14 @@ function App() {
 
   return (
     <div style={{ fontFamily: 'Poppins, sans-serif' }} className="bg-white dark:bg-[#171717]">
-    <Nav 
+    {/* <Nav 
       home={onHomeClick}
       project={onProjectClick} 
       about={onAboutClick} 
       contact={onContactClick}
-    />
+    /> */}
     {renderComponent()}
-    <Footer />
+    {/* <Footer /> */}
     </div>
   )
 }
