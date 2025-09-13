@@ -1,21 +1,37 @@
-import React from 'react'
+
 
 const HeroSection = () => {
   return (
-    <div className='w-[100%] md:w-[50%] flex flex-col gap-10 px-6 md:px-14 py-10 mx-auto min-h-screen border-x border-gray-200'>
+    <div className='w-[100%] md:w-[50%] flex flex-col gap-12 px-6 md:px-14 py-10 mx-auto min-h-screen border-x border-gray-200 text-gray-800'>
       <div>
-        <h1 className='text-red-500 text-xl mb-4'>Ujjwal kumar</h1>
+        <h1 className='text-xl mb-3 text-black'>
+          Ujjwal kumar
+        </h1>
         <p>currently working as a student &#128575;</p>
       </div>
 
       <div>
-        <h1 className='text-red-500 text-xl mb-3'>Projects</h1>
-        <p>Authify - <a className='text-blue-500 underline' href="https://github.com/ujjwalkumar02/authify">github</a> <a className='text--500 underline' ></a></p>
-        <p>MailSense - <a className='text-blue-500 underline' href="https://github.com/ujjwalkumar02/mailsense">github</a> <a className='text--500 underline' ></a></p>
+        <h1 className=' text-xl mb-3 text-black'>
+          Projects
+        </h1>
+        <p>
+          Resume score - 
+          <a className='text-blue-500 underline' href="https://github.com/ujjwalkumar02/resume-score">github</a>
+        </p>
+        <p>
+          MailSense - 
+          <a className='text-blue-500 underline' href="https://github.com/ujjwalkumar02/mailsense">github</a> 
+        </p>
+        <p>
+          Authify - 
+          <a className='text-blue-500 underline' href="https://github.com/ujjwalkumar02/authify">github</a>
+        </p>
       </div>
 
       <div>
-        <h1 className='text-red-500 text-xl mb-3'>Technical Skills</h1>
+        <h1 className=' text-xl mb-3 text-black'>
+          Technical Skills
+        </h1>
         <div className='md:hidden block'>
           <img src="https://skillicons.dev/icons?i=next,react,typescript,javascript,nodejs" className='mb-2'/>
           <img src="https://skillicons.dev/icons?i=expressjs,mongodb,postgresql,prisma,tailwind" className='mb-2'/>
@@ -28,19 +44,39 @@ const HeroSection = () => {
       </div>
 
       <div>
-        <h1 className='text-red-500 text-xl mb-3'>Education</h1>
+        <h1 className='text-xl mb-3 text-black'>Education</h1>
         <p>BTech</p>
         <p>Maharaja Agrasen Institute of Technology</p>
         <p>2022 - present</p>
       </div>
 
       <div>
-        <h1 className='text-red-500 text-xl mb-3'>Contact</h1>
+        <h1 className='text-xl mb-3 text-black'>Contact</h1>
         <div className='flex gap-3 flex-wrap'>
-          <a className='text-blue-500 underline' href="mailto:ujjwal.kumar.id@gmail.com">Email</a>
-          <a className='text-blue-500 underline'  href="https://www.linkedin.com/in/ujjwal-kumar-958ba6272">LinkedIn</a>
-          <a className='text-blue-500 underline'  href="https://github.com/ujjwalkumar02">Github</a>
-          <a className='text-blue-500 underline'  href="resume.pdf">Resume</a>
+          <a 
+            className='text-blue-500 underline'
+            href="mailto:ujjwal.kumar.id@gmail.com"
+          >
+            Email
+          </a>
+          <a 
+            className='text-blue-500 underline'  
+            href="https://www.linkedin.com/in/ujjwal-kumar-958ba6272"
+          >
+            LinkedIn
+          </a>
+          <a 
+            className='text-blue-500 underline' 
+            href="https://github.com/ujjwalkumar02"
+          >
+            Github
+          </a>
+          <a 
+            className='text-blue-500 underline' 
+            href="resume.pdf"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>
