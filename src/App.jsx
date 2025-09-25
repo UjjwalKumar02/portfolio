@@ -1,11 +1,8 @@
 import { useState } from "react"
 import About from "./components/about/About"
-import Education from "./components/education/Education"
-import Footer from "./components/footer/Footer"
-import HeroSection from "./components/hero-section/HeroSection"
-import Nav from "./components/nav/Nav"
-import Projects from "./components/projects/Projects"
-import Skills from "./components/skills/Skills"
+import Hero from "./components/hero/Hero"
+import Project from "./components/project/Project"
+import Home from "./components/home/Home"
 
 
 
@@ -13,21 +10,15 @@ function App() {
   const [activeComponent, setActiveComponent] = useState('home');
 
   const renderComponent = () => {
-    switch(activeComponent){
+    switch (activeComponent) {
       case 'home':
-        return <HeroSection/>;
+        return <Home />;
       case 'about':
         return (
-        <>
-          <About/>
-          <Education/>
-          <Skills/>
-        </>
-      );
+          <About />
+        );
       case 'projects':
-        return <Projects/>;
-      case 'contact':
-        return <br/>;
+        return <Project />;
     }
   }
 
@@ -40,21 +31,15 @@ function App() {
   const onProjectClick = () => {
     setActiveComponent('projects');
   }
-  const onContactClick = () => {
-    setActiveComponent('contact');
-  }
+
 
   return (
-    <div style={{ fontFamily: 'Poppins, sans-serif' }} className="bg-white dark:bg-[#171717]">
-    {/* <Nav 
-      home={onHomeClick}
-      project={onProjectClick} 
-      about={onAboutClick} 
-      contact={onContactClick}
-    /> */}
-    {renderComponent()}
-    {/* <Footer /> */}
+
+    <div style={{ fontFamily: 'Poppins, sans-serif' }} className="bg-pink- lg:w-[50%] mx-auto shadow-xs min-h-screen justify-center">
+      <Hero onHomeClick={onHomeClick} onProjectClick={onProjectClick} onAboutClick={onAboutClick} />
+      {renderComponent()}
     </div>
+
   )
 }
 

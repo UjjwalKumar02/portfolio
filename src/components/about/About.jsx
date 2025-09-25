@@ -1,33 +1,54 @@
-import React, {useState} from 'react'
-import {motion} from 'framer-motion'
 
 const About = () => {
-  const [hasAnimated, setHasAnimated] = useState(false)
-
-// d:p-7 px-4 py-8 md:my-10 my-8
   return (
-    <motion.section
-    id='about' 
-    className='w-full bg-white dark:bg-[#171717] dark:text-gray-300'
-    initial={{opacity:0, y:50}}
-    whileInView={hasAnimated ? {opacity:0, y:50} : {opacity:1, y:0}}
-    transition={{duration:0.5, ease:'easeOut'}}
-    viewport={{
-      amount:0.1, 
-      once:true,
-      onEnter: ()=>setHasAnimated(true),
-      onExit: ()=>setHasAnimated(false)
-    }}
-    >
-      <div className='md:w-[50%] mx-auto dark:border-gray-700 px-10 py-14 border-x border-t border-gray-300 pt-20'>
-        <p className='md:text-[1.7rem] text-[1.5rem]  text-[#004eff]'>
-          About
-        </p>
-        <p className='mt-8'>
-          Hi, I'm an undergraduate student passionate about learning technologies like web development and machine learning to solve real-world problems.
-        </p>
-      </div>
-    </motion.section>
+    <div className='px-6 mt-2 space-y-5'>
+      <p>
+        {/* In 2003 i got born in a small town of bihar, India. */}
+      </p>
+
+      {/* <p className=''>
+        I am currently in the final year of
+        <span className='font-medium italic'> Bachelors of Technology </span> */}
+        {/* in specialisation of */}
+        {/* <span className='font-medium italic'> Electronics and Communication </span> */}
+        {/* (Minor in
+        <span className='font-medium italic'> AI & ML) </span> */}
+        {/* from
+        <span className='font-medium italic'> MAIT, Delhi.</span>
+      </p> */}
+
+      {/* <p className=''>
+        I have strong interest in software technologies, particularly in
+        <span className='font-medium italic'> web development </span>
+        and
+        <span className='font-medium italic'> machine learning.</span>
+      </p> */}
+
+      <p className='text-lg font-medium'>
+        Technologies i familiar with :
+      </p>
+
+      <ul className='flex flex-wrap gap-2 list-disc list-inside'>
+        <li className='font-medium '>Languages: </li>
+        C++, Javascript/Typescript, Python, SQL
+      </ul>
+       <ul className='flex flex-wrap gap-2 list-disc list-inside'>
+        <li className='font-medium '>Frontend: </li>
+        Next.js, React.js, Tailwind, HTML, CSS
+      </ul>
+      <ul className='flex flex-wrap gap-2 list-disc list-inside'>
+        <li className='font-medium '>Backend: </li>
+        Node.js, Express.js, FastAPI, Rest API, Mongoose, Prisma
+      </ul>
+       <ul className='flex flex-wrap gap-2 list-disc list-inside'>
+        <li className='font-medium '>Database: </li>
+        MongoDB, PostgreSQL
+      </ul>
+       <ul className='flex flex-wrap gap-2 list-disc list-inside'>
+        <li className='font-medium '>Machine Learning: </li>
+        Supervised, Unsupervised, NLP, scikit-learn
+      </ul>
+    </div>
   )
 }
 
