@@ -1,46 +1,24 @@
-import { useState } from "react"
-import About from "./components/about/About"
-import Hero from "./components/hero/Hero"
-import Project from "./components/project/Project"
-import Home from "./components/home/Home"
-
-
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState('home');
-
-  const renderComponent = () => {
-    switch (activeComponent) {
-      case 'home':
-        return <Home />;
-      case 'about':
-        return (
-          <About />
-        );
-      case 'projects':
-        return <Project />;
-    }
-  }
-
-  const onHomeClick = () => {
-    setActiveComponent('home');
-  }
-  const onAboutClick = () => {
-    setActiveComponent('about');
-  }
-  const onProjectClick = () => {
-    setActiveComponent('projects');
-  }
-
-
   return (
-
-    <div style={{ fontFamily: 'Poppins, sans-serif' }} className="bg-pink- lg:w-[50%] mx-auto shadow-xs min-h-screen justify-center">
-      <Hero onHomeClick={onHomeClick} onProjectClick={onProjectClick} onAboutClick={onAboutClick} />
-      {renderComponent()}
+    <div
+      style={{ fontFamily: "Poppins, sans-serif" }}
+      className="bg-[#f4f4f4] min-h-screen"
+    >
+      <Nav />
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
-
-  )
+  );
 }
 
-export default App
+export default App;

@@ -6,5 +6,3 @@ Link: https://UjjwalKumar02.github.io/portfolio
 
 ## Technologies used:
 React.js, Tailwind CSS 
-
-<!-- Hericons -->
