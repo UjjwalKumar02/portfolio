@@ -32,7 +32,7 @@ const Contact = () => {
           <FaLinkedin /> LinkedIn
         </a>
         <a
-          href="public/Ujjwal_RESUME.pdf"
+          href="/Ujjwal_RESUME.pdf"
           className="flex gap-1.5 items-center bg-black text-white px-7 py-1 rounded-xl"
           target="_blank"
         >
