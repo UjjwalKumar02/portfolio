@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { TiDocumentText } from "react-icons/ti";
 import { IoMdMail } from "react-icons/io";
+import pdf from "../../public/Ujjwal_RESUME.pdf"
 
 const Contact = () => {
   return (
@@ -32,7 +33,7 @@ const Contact = () => {
           <FaLinkedin /> LinkedIn
         </a>
         <a
-          href="public/Ujjwal_RESUME.pdf"
+          href={pdf}
           className="flex gap-1.5 items-center bg-black text-white px-7 py-1 rounded-xl"
           target="_blank"
         >
