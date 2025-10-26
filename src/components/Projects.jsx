@@ -4,10 +4,10 @@ import img2 from "../../public/resume-score.jpeg";
 
 const Projects = () => {
   return (
-    <div id="projects" className="lg:w-[60%] w-[97%] mx-auto mt-20">
-      <h1 className="text-2xl font-medium text-center">Projects</h1>
+    <div id="projects" className="lg:w-[60%] w-[94%] mx-auto mt-24">
+      <h1 className="lg:text-2xl text-xl font-medium text-center">Projects</h1>
 
-      <div className="flex lg:flex-row flex-col justify-between ">
+      <div className="flex lg:flex-row flex-col justify-center gap-10 lg:items-start items-center">
         <ProjectBox
           name={"Circles"}
           desc={"A community based social platform for connecting people."}

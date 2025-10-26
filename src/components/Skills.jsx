@@ -2,10 +2,10 @@ import SkillsBox from "./SkillsBox";
 
 const Skills = () => {
   return (
-    <div id="skills" className="lg:w-[60%] w-[97%] mx-auto mt-20">
-      <h1 className="text-2xl font-medium text-center">Technical Skills</h1>
+    <div id="skills" className="lg:w-[60%] w-[94%] mx-auto mt-24">
+      <h1 className="lg:text-2xl text-xl font-medium text-center">Technical Skills</h1>
 
-      <div className="flex flex-wrap justify-between md:items-start items-center">
+      <div className="flex lg:flex-row flex-col justify-between md:items-start items-center">
         <SkillsBox
           name={"Web Development"}
           heading1={"Frontend"}
