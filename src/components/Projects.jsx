@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section 
       id="projects" 
-      className="lg:max-w-4xl max-w-[91%] mx-auto p-10 mt-24 rounded-2xl shadow-sm border-[1.5px] border-gray-300"
+      className="lg:max-w-4xl mx-auto p-10 mt-24 rounded-2xl shadow-sm border-[1.5px] border-gray-300"
     >
       <h1 className="lg:text-2xl text-xl font-medium text-center">Recent Projects</h1>
 
