@@ -14,14 +14,12 @@ const Nav = () => {
 
 
   return (
-    <nav
-      className={`sticky top-0 max-w-6xl mx-auto px-5 py-4 flex justify-between items-center lg:rounded-lg 
-        ${isSticky
-          ? "bg-white shadow-sm border-b-[1.5px] border-gray-300"
-          : "bg-transparent"
-        }`}
+    <nav className={`sticky top-0 ${ isSticky ? "bg-white shadow-sm border-b-[1.5px] border-gray-300" : "bg-transparent" }`}>
+      <div
+      className={`max-w-6xl mx-auto px-5 py-4 flex justify-between items-center lg:rounded-lg 
+        `}
     >
-      <a href="/">
+      <a href="#about">
         <h1 className="text-xl font-semibold tracking-tighter">Ujjwal</h1>
       </a>
 
@@ -36,6 +34,7 @@ const Nav = () => {
       </div>
 
 
+    </div>
     </nav>
   );
 };

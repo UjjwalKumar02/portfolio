@@ -9,7 +9,7 @@ function App() {
   return (
     <div
       style={{ fontFamily: "Poppins, sans-serif" }}
-      className="bg-[#f4f4f4] min-h-screen"
+      className=" min-h-screen"
     >
       <Nav />
       <Hero />
