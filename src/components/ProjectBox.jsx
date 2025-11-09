@@ -1,56 +1,47 @@
-import { FaGithub } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
-import { RxExternalLink } from "react-icons/rx";
 
-const ProjectBox = ({ name, desc, img, stack1, stack2, live, github }) => {
+
+const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
   return (
-    <div className="lg:w-[40%] w-[94%] bg-white lg:p-9 p-7.5 rounded-xl border-[1.5px] border-gray-300 shadow-sm space-y-5 mt-8">
-      <div className="flex justify-between items-center">
-        <p className="text-lg font-medium">{name}</p>
+    <div className="flex md:flex-row flex-col justify-center items-center md:gap-16 gap-10">
 
-        <div className="flex items-center gap-3.5">
-          <a href={github}>
-            <FaGithub size={22} />
-          </a>
-          <a href={live}>
-            <RxExternalLink size={22} />
-          </a>
-        </div>
-      </div>
-      <p className="text-gray-600 lg:text-md text-sm">{desc}</p>
-
-      <div>
+      <div className="">
         <img
           src={img}
-          alt=""
-          className="my-6 rounded-xl border-[1.5px] border-gray-300"
+          alt="project-image"
+          className="sm:max-w-70 sm:h-50 h-40 max-w-70 rounded-2xl object-cover border-[1.5px] border-gray-300"
         />
       </div>
 
-      <div className="space-y-3">
-        <div className="flex lg:gap-3 gap-1.5 items-center">
-        {stack1.map((s) => (
-          <button
-            key={s}
-            className="px-4 py-1 rounded-xl w-full border-[1.5px] border-gray-400  text-gray-800 lg:text-sm text-xs"
+      <div className="flex flex-col gap-1.5">
+        <h2 className="text-xl font-medium">{title}</h2>
+        <p className="text-sm">{desc}</p>
+
+        <div className="mt-2 flex gap-1 items-center text-gray-800 text-xs">
+          {techStack.length > 0 && techStack.map((t) =>
+            <p className="py-0.5 px-4 rounded-lg border-[1.5px] border-gray-300">
+              {t}
+            </p>)}
+        </div>
+
+        <div className="mt-4 flex flex-col items-center gap-1.5 text-sm">
+          <a
+            href={liveLink}
+            target="_blank"
+            className="w-full px-6 py-1 bg-black text-white rounded-lg border-[1.5px] border-gray-900"
           >
-            {s}
-          </button>
-        ))}
-      </div>
-      <div className="flex lg:gap-3 gap-1.5 items-center">
-        {stack2.map((s) => (
-          <button
-            key={s}
-            className="px-4 py-1 lg:text-sm text-xs rounded-xl w-full border-[1.5px] border-gray-400 text-gray-800"
+            Try now
+          </a>
+          <a
+            href={githubLink}
+            target="_blank"
+            className="w-full px-6 py-1 bg-white rounded-lg border-[1.5px] border-gray-400"
           >
-            {s}
-          </button>
-        ))}
-      </div>
+            Source code
+          </a>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectBox;
+export default ProjectBox

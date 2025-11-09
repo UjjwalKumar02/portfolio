@@ -1,36 +1,33 @@
 import SkillsBox from "./SkillsBox";
 
+
 const Skills = () => {
   return (
-    <div id="skills" className="lg:w-[60%] w-[94%] mx-auto mt-24">
-      <h1 className="lg:text-2xl text-xl font-medium text-center">Technical Skills</h1>
+    <section 
+      id="skills" 
+      className="max-w-4xl mx-auto p-10 mt-24"
+    >
+      <h1 className="mb-10 lg:text-2xl text-xl font-medium text-center">Technical Skills</h1>
 
-      <div className="flex lg:flex-row flex-col justify-between md:items-start items-center">
+      <div className="flex flex-row flex-wrap justify-center gap-8">
         <SkillsBox
-          name={"Web Development"}
-          heading1={"Frontend"}
-          stack1={["Next.js", "React.js", "Tailwind CSS", "HTML", "CSS"]}
-          heading2={"Backend"}
-          stack2={["Node.js", "Express.js", "Rest API", "FastAPI"]}
-          heading3={"Database"}
-          stack3={["PostgreSQL", "MongoDB"]}
+          name={"Languages"}
+          stack={["C++", "JavaScript"]}
+        />
+        <SkillsBox
+          name={"Frontend"}
+          stack={["Next.js", "React.js", "Tailwind CSS", "HTML", "CSS"]}
+        />
+        <SkillsBox
+          name={"Backend"}
+          stack={["Node.js", "Express.js", "Rest API", "FastAPI"]}
         />
         <SkillsBox
           name={"Machine Learning"}
-          heading1={"Algorithms"}
-          stack1={["Supervised", "Unsupervised", "NLP"]}
-          heading2={"Tools"}
-          stack2={["Scikit-learn", "Flask", "Streamlit"]}
-        />
-        <SkillsBox
-          name={"Software"}
-          heading1={"Languages"}
-          stack1={["C++", "SQL"]}
-          heading2={"Tools"}
-          stack2={["Git", "Postman"]}
+          stack={["Supervised", "Unsupervised", "NLP"]}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

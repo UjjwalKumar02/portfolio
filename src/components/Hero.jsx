@@ -19,19 +19,19 @@ const Hero = () => {
           developer.
         </p>
 
-        <div className="md:max-w-[40%] flex gap-2 md:justify-start justify-center items-center mt-8 text-sm">
-          <a
-            href="https://github.com/ujjwalkumar02"
-            className="w-full px-5 py-2 flex gap-1.5 justify-center items-center bg-black text-white rounded-lg"
-            target="_blank"
-          >
-            <FaGithub size={16}/> Github
-          </a>
+        <div className="md:max-w-[67%] flex gap-2 md:justify-start justify-center items-center mt-8 text-sm">
           <a
             href="mailto:ujjwal.kumar.id@gmail.com"
-            className="px-5 py-2 flex gap-1.5 justify-center items-center bg-white text-black rounded-lg border-[1.5px] border-gray-400"
+            className="w-full px-5 py-2 flex gap-1.5 justify-center items-center bg-black text-white rounded-lg"
           >
             <IoMdMail size={16}/> Mail
+          </a>
+          <a
+            href="https://github.com/ujjwalkumar02"
+            target="_blank"
+            className="px-5 py-2 flex gap-1.5 justify-center items-center bg-white text-black rounded-lg border-[1.5px] border-gray-400"
+          >
+            <FaGithub size={16}/> Github
           </a>
         </div>
       </div>
