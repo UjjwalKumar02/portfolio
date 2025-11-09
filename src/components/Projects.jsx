@@ -7,11 +7,12 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="lg:max-w-4xl mx-auto p-10 mt-24 rounded-2xl shadow-sm border-[1.5px] border-gray-300"
+      className=""
     >
-      <h1 className="lg:text-2xl text-xl font-medium text-center">Recent Projects</h1>
+      <div className="lg:max-w-4xl mx-auto p-10 mt-12">
+        <h1 className="lg:text-2xl text-xl font-medium text-center">Recent Projects</h1>
 
-      <div className="space-y-28 my-16">
+      <div className="space-y-20 mt-12">
         <ProjectBox
           title={"Circles"}
           desc={"A community based social web app."}
@@ -28,6 +29,7 @@ const Projects = () => {
           githubLink={"https://github.com/UjjwalKumar02/Rescore"}
           liveLink={"https://rescore-flax.vercel.app"}
         />
+      </div>
       </div>
     </section>
   );

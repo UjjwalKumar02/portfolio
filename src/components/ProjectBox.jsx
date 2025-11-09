@@ -2,7 +2,7 @@
 
 const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center md:gap-16 gap-10">
+    <div className="flex md:flex-row flex-col justify-center items-center md:gap-16 gap-5">
 
       <div className="">
         <img
@@ -27,14 +27,14 @@ const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
           <a
             href={liveLink}
             target="_blank"
-            className="w-full px-6 py-1 bg-black text-white rounded-lg border-[1.5px] border-gray-900"
+            className="w-full px-6 py-1 bg-black text-white rounded-lg border-[1.5px] border-gray-900 hover:bg-gray-800"
           >
             Try now
           </a>
           <a
             href={githubLink}
             target="_blank"
-            className="w-full px-6 py-1 bg-white rounded-lg border-[1.5px] border-gray-400"
+            className="w-full px-6 py-1 bg-white rounded-lg border-[1.5px] border-gray-400 hover:bg-gray-100"
           >
             Source code
           </a>
