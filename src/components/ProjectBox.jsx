@@ -8,17 +8,17 @@ const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
         <img
           src={img}
           alt="project-image"
-          className="sm:max-w-70 sm:h-50 h-40 max-w-70 rounded-2xl object-cover border-[1.5px] border-gray-300"
+          className="sm:max-w-70 sm:h-50 h-40 max-w-64 rounded-2xl object-cover border-[1.5px] border-gray-300"
         />
       </div>
 
-      <div className="flex flex-col gap-1.5">
+      <div className="max-w-[99%] flex flex-col gap-1.5">
         <h2 className="text-xl font-medium">{title}</h2>
         <p className="text-sm">{desc}</p>
 
         <div className="mt-2 flex gap-1 items-center text-gray-800 text-xs">
           {techStack.length > 0 && techStack.map((t) =>
-            <p className="py-0.5 px-4 rounded-lg border-[1.5px] border-gray-300">
+            <p className="py-0.5 px-2.5 rounded-lg border-[1.5px] border-gray-300">
               {t}
             </p>)}
         </div>

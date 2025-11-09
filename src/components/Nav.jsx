@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <nav className={`sticky top-0 ${ isSticky ? "bg-white shadow-sm border-b-[1.5px] border-gray-300" : "bg-transparent" }`}>
       <div
-      className={`max-w-4xl mx-auto px-5 py-4 flex justify-between items-center lg:rounded-lg 
+      className={`max-w-5xl mx-auto px-5 py-4 flex justify-between items-center lg:rounded-lg 
         `}
     >
       <a href="#about">

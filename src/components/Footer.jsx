@@ -8,7 +8,7 @@ const Footer = () => {
       id="contact" 
       className="bg-black text-white mt-12"
     >
-      <footer className="max-w-4xl min-h-70 mx-auto px-10 flex justify-between items-center">
+      <footer className="max-w-4xl min-h-70 mx-auto md:px-10 px-12 flex justify-between items-center">
         <div className="space-y-2 text-sm">
           <p>
             Ujjwal kumar

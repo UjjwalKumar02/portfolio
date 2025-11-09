@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="about"
-      className="lg:max-w-4xl max-w-[91%] mx-auto bg-white lg:p-9 p-8 flex flex-col-reverse gap-10 sm:flex-row justify-between items-center rounded-2xl shadow-xs border-[1.5px] border-gray-300 mt-10"
+      className="lg:max-w-4xl max-w-[91%] mx-auto bg-white lg:p-9 p-8 flex flex-col-reverse gap-10 sm:flex-row justify-between items-center rounded-3xl shadow-xs border-[1.5px] border-gray-300 mt-10"
     >
       <div className="md:max-w-[60%] md:space-y-4 space-y-2">
 
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       <div className="">
-        <img src={img} alt="profile-image" className="md:w-49 w-34 rounded-2xl object-contain" />
+        <img src={img} alt="profile-image" className="md:w-49 w-34 rounded-3xl object-contain" />
       </div>
     </div>
   );
