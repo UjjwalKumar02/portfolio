@@ -1,9 +1,9 @@
-
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { IoCodeOutline } from "react-icons/io5";
 
 const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
   return (
     <div className="flex md:flex-row flex-col justify-center items-center md:gap-16 gap-5">
-
       <div className="">
         <img
           src={img}
@@ -17,31 +17,35 @@ const ProjectBox = ({ img, title, desc, techStack, liveLink, githubLink }) => {
         <p className="text-sm">{desc}</p>
 
         <div className="mt-2 flex gap-1 items-center text-gray-800 text-xs">
-          {techStack.length > 0 && techStack.map((t) =>
-            <p className="py-0.5 px-2.5 rounded-lg border-[1.5px] border-gray-300">
-              {t}
-            </p>)}
+          {techStack.length > 0 &&
+            techStack.map((t) => (
+              <p className="py-0.5 px-2.5 rounded-lg border-[1.5px] border-gray-300">
+                {t}
+              </p>
+            ))}
         </div>
 
         <div className="mt-4 flex flex-col items-center gap-1.5 text-sm">
           <a
             href={liveLink}
             target="_blank"
-            className="w-full px-6 py-1 bg-black text-white rounded-lg border-[1.5px] border-gray-900 hover:bg-gray-800"
+            className="w-full px-6 py-1 flex justify-between items-center bg-black text-white rounded-lg border-[1.5px] border-gray-900 hover:bg-gray-800"
           >
             Try now
+            <HiOutlineArrowUpRight size={14} />
           </a>
           <a
             href={githubLink}
             target="_blank"
-            className="w-full px-6 py-1 bg-white rounded-lg border-[1.5px] border-gray-400 hover:bg-gray-100"
+            className="w-full px-6 py-1 flex justify-between items-center bg-white rounded-lg border-[1.5px] border-gray-400 hover:bg-gray-100"
           >
             Source code
+            <IoCodeOutline size={16} />
           </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectBox
+export default ProjectBox;
